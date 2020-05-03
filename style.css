@@ -1,0 +1,268 @@
+﻿/* Style properties for every div inside body */
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: white;
+	min-width: 1350px;
+	margin: 0px auto;
+}
+
+/* Universal Selector */
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#header{
+	background-image:url(pictures/cover.jpg);
+}
+
+/* Properties for top portion of header */
+.headertop{
+	width: 100%;
+	height: 190px;
+	background-size: cover;
+}
+
+/* Postion for the Club/Organization name (left) and it's properties */
+.clubname{
+	width: 100%;
+	padding: 20px;
+	position: fixed;
+	top: 0px;
+	text-align: left;
+	font-size: 24px;
+	color: white;
+	transition: .5s;
+}
+
+/* Position of the navbar/menu (right) and it's properties */
+.navbar{
+	width: 100%;
+	padding: 10px;
+	position: fixed;
+	top: 0px;
+	text-align: right;
+	transition: .5s;
+	z-index: 99;
+}
+
+/* Properties for every single navbar/menu button */
+.navbar ul li{
+	display: inline-block;
+	color: white;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn {
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	background: transparent;
+  	position: relative;
+  	display: inline-block;
+	border: transparent;
+	border-top: 2px solid transparent;
+	transition: .5s;
+}
+
+/* Properties for navbar/menu dropdown (not button) */
+.dropdown {
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	background: transparent;
+  	position: relative;
+  	display: inline-block;
+	border: transparent;
+	border-top: 2px solid transparent;
+	transition: .5s;
+}
+
+/* Properties for content of navbar/menu dropdown */
+/* About Us */
+.dropdown-content1 {
+  	display: none;
+  	position: absolute;
+  	background-color: #C23329;
+  	width: 100px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	right: 8px;
+	bottom: -102px;
+}
+
+/* Rules */
+.dropdown-content2 {
+  	display: none;
+  	position: absolute;
+  	background-color: #C23329;
+  	width: 135px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	right: -27px;
+	bottom: -146px;
+}
+
+/* Forms */
+.dropdown-content3 {
+  	display: none;
+  	position: absolute;
+  	background-color: #C23329;
+  	width: 100px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	right: -6px;
+	bottom: -102px;
+}
+
+/* Properties for content of navbar/menu dropdown */
+/* About Us */
+.dropdown-content1 a {
+	font-size: 18px;
+  	padding: 7px 5px;
+  	text-decoration: none;
+  	text-align: center;
+  	display: block;
+}
+
+/* Rules */
+.dropdown-content2 a {
+	font-size: 18px;
+  	padding: 7px 5px;
+  	text-decoration: none;
+  	text-align: center;
+  	display: block;
+}
+
+/* Forms */
+.dropdown-content3 a {
+	font-size: 18px;
+  	padding: 7px 5px;
+  	text-decoration: none;
+  	text-align: center;
+  	display: block;
+}
+
+/* Properties of dropdown-content when hover */
+/* About Us */
+.dropdown-content1 a:hover {
+	background-color: #FF4336;
+	color: #ddd;
+	transition: .5s;
+}
+
+/* Rules */
+.dropdown-content2 a:hover {
+	background-color: #FF4336;
+	color: #ddd;
+	transition: .5s;
+}
+
+/* Forms */
+.dropdown-content3 a:hover {
+	background-color: #FF4336;
+	color: #ddd;
+	transition: .5s;
+}
+
+/* Types of display shown when hover each dropdown */
+.dropdown:hover .dropdown-content1 {display: block;} /* About Us */
+.dropdown:hover .dropdown-content2 {display: block;} /* Rules */
+.dropdown:hover .dropdown-content3 {display: block;} /* Forms */
+
+/* Behavior when hover on dropdowns */
+.dropdown:hover {
+	border-top: 2px solid;
+}
+
+.btn:hover {
+	border-top: 2px solid;
+}
+
+/* Properties for title section */
+#title{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding-top: 1px;
+	padding-left: 80px;
+	padding-bottom: 40px;
+	height: 230px;
+}
+
+/* Properties for content section */
+#content{
+	background-color: white;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Properties for footer section */
+#footer{
+	background-color: #670D00;
+	font-size: 20px;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+}
+
+/* Properties for all links */
+a:link{
+	color: white;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+/* Properties for aligning links in footer using table */
+#tablefooter{
+	border-collapse: separate;
+	border-spacing: 25px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #FFFFFF;
+	font-style: normal;
+	font-variant: normal;
+	display: inline-block;
+}
+
+/* Properties for positioning Register button in footer using table */
+#tableregister{
+	border-collapse: separate;
+	border-spacing: 25px;
+	font-size: 20px;
+	color: white;
+	float: right;
+	display: inline-block;
+	line-height: 1.6;
+}
+
+/* Properties for Register button */
+#register{
+	border-radius: 10px;
+	border-color: #FFFFFF;
+	background-color: #670D00;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding: 15px 40px 15px 40px;
+	text-align: center;
+	word-spacing: normal;
+}
+
+/* Properties for Register button when hovering */
+#register:hover{
+	background-color: white;
+	border-color: #670D00;
+	color: #670D00;
+}
